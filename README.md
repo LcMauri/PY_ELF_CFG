@@ -1,12 +1,12 @@
 # PY_ELF_CFG
 
-Fonctionnalités principales :
-Parsing des fichiers ELF pour extraire les sections de code
 
-Reconstruction des fonctions à partir des symboles et du code désassemblé
+## Fonctionnalités
 
-Construction du CFG avec les noeuds représentant les blocs basiques et les arêtes représentant les sauts et appels
+- **Parsing ELF** : lecture des sections exécutables du binaire ELF.
+- **Extraction des fonctions** : identification des fonctions à partir des symboles et du code désassemblé.
+- **Construction du CFG** : création du graphe avec des blocs basiques en nœuds et des arêtes représentant les flux de contrôle (sauts, appels).
+- **Support architectures** : x86 et x86-64 (modulable).
+- **Export** : génération de fichiers DOT pour visualisation avec Graphviz.
 
-Support des architectures x86/x86-64 (à adapter selon besoin)
-
-Visualisation simple du CFG (export en DOT/graphviz)
+---
